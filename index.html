@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>国土地理院最適化ベクトルタイルDemo</title>
+    <style>
+      body,
+      #map {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+      }
+      .controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        color: black;
+      }
+      .controls label {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="controls">
+      <label>
+        <input
+          type="radio"
+          name="layerToggle"
+          id="toggleGsiVectolLayer"
+          checked
+        />
+        国土地理院最適化ベクトルタイル
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="layerToggle" id="toggleGsiLayer" />
+        地理院地図
+      </label>
+      <br />
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
